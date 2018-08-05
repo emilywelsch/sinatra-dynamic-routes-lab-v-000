@@ -28,6 +28,7 @@ class App < Sinatra::Base
     if params[:operation] = "add"
       "#{params[:number1]} + #{params[:number2]}"
     else
+    end
   end
 
 end
