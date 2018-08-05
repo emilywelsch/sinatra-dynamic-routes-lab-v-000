@@ -37,17 +37,6 @@ class App < Sinatra::Base
       output = (@num1 * @num2).to_s
     when 'divide'
       output = (@num1 / @num2).to_s
-
-    # if params[:operation] = 'add'
-    #   output = (@num1 + @num2).to_s
-    # elsif params[:operation] = 'subtract'
-    #   output = (@num1 - @num2).to_s
-    # elsif params[:operation] = 'multiply'
-    #   output = (@num1 * @num2).to_s
-    # elsif params[:operation] = 'divide'
-    #   output = (@num1 / @num2).to_s
-    # else
-    #   output = 'Unable to perform this operation'
     end
   end
 
