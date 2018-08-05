@@ -30,6 +30,7 @@ class App < Sinatra::Base
     if params[:operation] = 'add'
       output = sum(@num1.to_i,@num2.to_i).to_s
     else
+      output = 'Unable to perform this operation'
     end
   end
 
