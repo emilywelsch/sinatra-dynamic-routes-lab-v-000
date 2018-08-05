@@ -24,4 +24,9 @@ class App < Sinatra::Base
     "#{params[:word1]} #{params[:word2]} #{params[:word3]} #{params[:word4]} #{params[:word5]}."
   end
 
+  get '/:operation/:number1/:number2' do
+    if params[:operation] = "add"
+      "#{params[:number1]} + #{params[:number2]}"
+  end
+
 end
