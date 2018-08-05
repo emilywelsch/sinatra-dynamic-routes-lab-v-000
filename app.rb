@@ -27,7 +27,7 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2' do
     @num1 = params[:number1].to_i
     @num2 = params[:number2].to_i
-
+    output = 'Unable to perform this operation'
     case params[:operation]
     when 'add'
       output = (@num1 + @num2).to_s
@@ -38,17 +38,16 @@ class App < Sinatra::Base
     when 'divide'
       output = (@num1 / @num2).to_s
 
-
-    if params[:operation] = 'add'
-      output = (@num1 + @num2).to_s
-    elsif params[:operation] = 'subtract'
-      output = (@num1 - @num2).to_s
-    elsif params[:operation] = 'multiply'
-      output = (@num1 * @num2).to_s
-    elsif params[:operation] = 'divide'
-      output = (@num1 / @num2).to_s
-    else
-      output = 'Unable to perform this operation'
+    # if params[:operation] = 'add'
+    #   output = (@num1 + @num2).to_s
+    # elsif params[:operation] = 'subtract'
+    #   output = (@num1 - @num2).to_s
+    # elsif params[:operation] = 'multiply'
+    #   output = (@num1 * @num2).to_s
+    # elsif params[:operation] = 'divide'
+    #   output = (@num1 / @num2).to_s
+    # else
+    #   output = 'Unable to perform this operation'
     end
   end
 
